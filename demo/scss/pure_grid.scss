@@ -1,0 +1,118 @@
+// style configuration
+*:after,*:before {
+	box-sizing: border-box;
+}
+html {
+	font-size: 1em;
+}
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Tahoma, arial, sans-serif;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #333;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	width: 100%;
+	text-align: center;
+	background:#333333;
+	margin: 0;
+	color: #fff;
+	padding: 10px 0;
+	text-shadow: 1px 2px rgba(0,0,0,0.4);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+// set the container and row
+.container {
+	width: 100%;
+	max-width: 1180px; //desired max width
+	margin-right: auto;
+	margin-left: auto;
+}
+.row {
+	display: block;
+
+	// add style
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+    margin-top: 20px;
+}
+
+// self clearing
+.container:before, .container:after,
+.row:before, .row:after,
+.column:before, .column:after,
+.cf:before, .cf:after {
+	content: ' ';
+	display: table;
+}
+.container:after,
+.row:after,
+.column:after
+.cf:after {
+	clear: both;
+}
+.column{
+	margin: 0 0.42%;
+	float: left;
+
+	// add style
+	background: #333;
+	color: #ccc;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	font-variant: small-caps;
+	font-style: italic;
+	font-size: 1.1rem;
+	text-shadow: 1px 2px rgba(0,0,0,0.4);
+	transition: transform .2s ease-in-out;
+	&:hover{
+		transform: scale(1.01);
+		box-shadow: 0 0 10px rgba(0,0,0,.3);
+	}
+}
+// Grid Layout
+.one {
+	width: 7.49%;
+}
+.two {
+	width: 15.83%;
+}
+.three {
+	width: 24.16%;
+}
+.four {
+	width: 32.49%;
+}
+.five {
+	width: 40.83%;
+}
+.six {
+	width: 49.16%;
+}
+.seven {
+	width: 57.49%;
+}
+.eight {
+	width: 65.82%;
+}
+.nine {
+	width: 74.16%;
+}
+.ten {
+	width: 82.49%;
+}
+.eleven {
+	width: 90.82%;
+}
+.twelve {
+	width: 100%;
+	margin: 0;
+}
